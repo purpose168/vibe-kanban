@@ -1,8 +1,15 @@
-packages:
-  - frontend
-  - remote-frontend
+# pnpm 工作区配置文件
+# 用于定义 monorepo 结构，管理多个相关包
 
+# packages 部分：列出工作区中包含的所有包
+# 这些包将共享依赖项和构建配置
+packages:
+  - frontend           # 主前端应用
+  - remote-frontend    # 远程部署的前端应用
+
+# onlyBuiltDependencies 部分：列出仅需要构建的依赖项
+# 这些依赖项在安装时会被构建，而不是直接使用预构建的版本
 onlyBuiltDependencies:
-  - '@sentry/cli'
-  - core-js
-  - esbuild
+  - '@sentry/cli'      # Sentry 错误监控的 CLI 工具
+  - core-js            # JavaScript 标准库的 polyfill
+  - esbuild            # 高性能的 JavaScript 打包工具
