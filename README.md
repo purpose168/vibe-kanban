@@ -8,7 +8,7 @@
   </a>
 </p>
 
-<p align="center">让 Claude Code、Gemini CLI、Codex、Amp 等编码代理的效率提升 10 倍...</p>
+<p align="center">让 Claude Code、Gemini CLI、Codex、Amp 等编码智能体的效率提升 10 倍...</p>
 <p align="center">
   <a href="https://www.npmjs.com/package/vibe-kanban"><img alt="npm" src="https://img.shields.io/npm/v/vibe-kanban?style=flat-square" /></a>
   <a href="https://github.com/BloopAI/vibe-kanban/blob/main/.github/workflows/publish.yml"><img alt="构建状态" src="https://img.shields.io/github/actions/workflow/status/BloopAI/vibe-kanban/.github%2Fworkflows%2Fpublish.yml" /></a>
@@ -23,20 +23,20 @@
 
 ## 概述
 
-AI 编码代理（coding agents）正在越来越多地编写世界上的代码，而人类工程师现在将大部分时间花在规划、审查和编排任务上。Vibe Kanban 简化了这一过程，使您能够：
+AI 编码智能体（coding agents）正在越来越多地编写世界上的代码，而人类工程师现在将大部分时间花在规划、审查和编排任务上。Vibe Kanban 简化了这一过程，使您能够：
 
-- 轻松在不同的编码代理之间切换
-- 并行或按顺序编排多个编码代理的执行
+- 轻松在不同的编码智能体之间切换
+- 并行或按顺序编排多个编码智能体的执行
 - 快速审查工作并启动开发服务器
-- 跟踪您的编码代理正在处理的任务状态
-- 集中配置编码代理的 MCP 配置
+- 跟踪您的编码智能体正在处理的任务状态
+- 集中配置编码智能体的 MCP 配置
 - 在远程服务器上运行 Vibe Kanban 时通过 SSH 远程打开项目
 
 您可以[在此处](https://youtu.be/TFT3KnZOOAk)观看视频概述。
 
 ## 安装
 
-确保您已使用您喜爱的编码代理进行身份验证。支持的编码代理完整列表可在[文档](https://vibekanban.com/docs)中找到。然后在您的终端中运行：
+确保您已使用您喜爱的编码智能体进行身份验证。支持的编码智能体完整列表可在[文档](https://vibekanban.com/docs)中找到。然后在您的终端中运行：
 
 ```bash
 npx vibe-kanban  # 使用 npx 运行 Vibe Kanban

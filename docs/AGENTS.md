@@ -219,7 +219,7 @@ curl -X POST 'https://api.example.com/users' \
 <AccordionGroup>
 <Accordion title="连接问题故障排除">
   - **防火墙阻止**：确保端口 80 和 443 已打开
-  - **代理配置**：设置 HTTP_PROXY 环境变量
+  - **智能体配置**：设置 HTTP_PROXY 环境变量
   - **DNS 解析**：尝试使用 8.8.8.8 作为 DNS 服务器
 </Accordion>
 

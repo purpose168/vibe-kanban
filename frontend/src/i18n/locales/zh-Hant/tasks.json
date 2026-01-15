@@ -186,7 +186,7 @@
     "processId": "程序 ID：{{id}}",
     "deleted": "已刪除",
     "deletedTooltip": "因復原而刪除：時間軸已回復到檢查點，後續執行已移除",
-    "agent": "代理：",
+    "agent": "智能体：",
     "exit": "退出：{{code}}",
     "started": "開始：{{date}}",
     "completed": "完成：{{date}}",
@@ -255,12 +255,12 @@
     },
     "labels": {
       "attempt": "嘗試",
-      "agent": "代理",
+      "agent": "智能体",
       "branch": "分支",
       "diffs": "差異",
       "summaryAndActions": "摘要與操作"
     },
-    "agent": "代理",
+    "agent": "智能体",
     "path": "路徑",
     "openInEditor": "在 {{editor}} 中查看變更",
     "copied": "已複製！",
@@ -374,7 +374,7 @@
   },
   "createAttemptDialog": {
     "title": "建立嘗試",
-    "description": "使用編碼代理開始新的嘗試。將建立 Git 工作樹與任務分支。",
+    "description": "使用編碼智能体開始新的嘗試。將建立 Git 工作樹與任務分支。",
     "baseBranch": "基底分支",
     "loadingBranches": "載入分支中...",
     "selectBranch": "選擇分支",
@@ -431,17 +431,17 @@
   },
   "startReviewDialog": {
     "title": "開始審查",
-    "description": "請求編碼代理審查您的變更並提供反饋。",
+    "description": "請求編碼智能体審查您的變更並提供反饋。",
     "additionalInstructions": "附加說明（可選）",
     "reviewComments": "審查評論（{{count}}）",
     "includeGitContext": "包含 Git 上下文",
-    "includeGitContextDescription": "告訴代理如何查看此分支上的所有變更",
+    "includeGitContextDescription": "告訴智能体如何查看此分支上的所有變更",
     "newSession": "新工作階段"
   },
   "resolveConflicts": {
     "dialog": {
       "title": "解決衝突",
-      "description": "偵測到衝突。選擇您希望代理如何解決它們。",
+      "description": "偵測到衝突。選擇您希望智能体如何解決它們。",
       "sessionLabel": "工作階段",
       "existingSession": "在目前工作階段中繼續",
       "newSession": "新工作階段",
@@ -498,7 +498,7 @@
     "loadingBranches": "載入分支中...",
     "selectBaseBranch": "選擇基底分支",
     "draftLabel": "建立為草稿",
-    "autoGenerateLabel": "請求 AI 代理產生更好的 PR 描述",
+    "autoGenerateLabel": "請求 AI 智能体產生更好的 PR 描述",
     "creating": "建立中...",
     "createButton": "建立 PR",
     "errors": {
@@ -519,15 +519,15 @@
     "taskPanel": {
       "companion": {
         "title": "Vibe Kanban Companion 點選功能",
-        "description": "點擊預覽視窗中的任何 UI 元件以精準選取它。編碼代理將收到確切的 DOM 選擇器與元件層級結構，減少模糊回饋。"
+        "description": "點擊預覽視窗中的任何 UI 元件以精準選取它。編碼智能体將收到確切的 DOM 選擇器與元件層級結構，減少模糊回饋。"
       },
       "installation": {
         "title": "開發伺服器與 Companion 安裝",
-        "description": "為預覽設定開發伺服器命令，設定腳本可在設定中配置。使用編碼代理自動安裝 Vibe Kanban Web Companion。"
+        "description": "為預覽設定開發伺服器命令，設定腳本可在設定中配置。使用編碼智能体自動安裝 Vibe Kanban Web Companion。"
       },
       "codeReview": {
         "title": "內建程式碼審查",
-        "description": "使用加號圖示直接在差異檢視中新增特定行的評論。所有回饋會彙整並作為完整審查送給編碼代理。"
+        "description": "使用加號圖示直接在差異檢視中新增特定行的評論。所有回饋會彙整並作為完整審查送給編碼智能体。"
       },
       "pullRequest": {
         "title": "從任務建立 PR",
@@ -594,8 +594,8 @@
       "andLaterProcesses_one": "及後續 {{count}} 個程序",
       "andLaterProcesses_other": "及後續 {{count}} 個程序",
       "fromHistory": "從歷史紀錄中刪除。",
-      "codingAgentRuns_one": "{{count}} 次編碼代理執行",
-      "codingAgentRuns_other": "{{count}} 次編碼代理執行",
+      "codingAgentRuns_one": "{{count}} 次編碼智能体執行",
+      "codingAgentRuns_other": "{{count}} 次編碼智能体執行",
       "scriptProcesses_one": "{{count}} 個腳本程序",
       "scriptProcesses_other": "{{count}} 個腳本程序",
       "setupCleanupBreakdown": "({{setup}} 個設定，{{cleanup}} 個清理)",

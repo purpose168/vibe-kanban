@@ -9,8 +9,8 @@
         "projectsDesc": "專案儲存庫與設定",
         "repos": "儲存庫",
         "reposDesc": "儲存庫腳本與設定",
-        "agents": "代理",
-        "agentsDesc": "編碼代理設定",
+        "agents": "智能体",
+        "agentsDesc": "編碼智能体設定",
         "mcp": "MCP 伺服器",
         "mcpDesc": "模型上下文協議伺服器",
         "organizations": "組織設定",
@@ -42,12 +42,12 @@
         }
       },
       "taskExecution": {
-        "title": "預設編碼代理",
-        "description": "選擇任務的預設編碼代理。",
+        "title": "預設編碼智能体",
+        "description": "選擇任務的預設編碼智能体。",
         "executor": {
-          "label": "預設代理設定檔",
+          "label": "預設智能体設定檔",
           "placeholder": "選擇設定檔",
-          "helper": "選擇建立任務嘗試時要使用的預設代理設定檔。"
+          "helper": "選擇建立任務嘗試時要使用的預設智能体設定檔。"
         },
         "variant": "預設",
         "defaultLabel": "預設"
@@ -142,11 +142,11 @@
         "description": "設定 PR 建立行為",
         "autoDescription": {
           "label": "預設自動產生 PR 描述",
-          "helper": "啟用後，AI 代理會在建立 PR 後自動更新標題與描述。"
+          "helper": "啟用後，AI 智能体會在建立 PR 後自動更新標題與描述。"
         },
         "customPrompt": {
           "useCustom": "使用自訂提示",
-          "helper": "產生 PR 描述時 AI 代理使用的自訂提示。使用 {pr_number} 與 {pr_url} 作為佔位符。"
+          "helper": "產生 PR 描述時 AI 智能体使用的自訂提示。使用 {pr_number} 與 {pr_url} 作為佔位符。"
         }
       },
       "notifications": {
@@ -243,25 +243,25 @@
       }
     },
     "agents": {
-      "title": "編碼代理設定",
-      "description": "使用不同設定自訂編碼代理的行為。",
-      "loading": "載入代理設定中...",
+      "title": "編碼智能体設定",
+      "description": "使用不同設定自訂編碼智能体的行為。",
+      "loading": "載入智能体設定中...",
       "save": {
-        "button": "儲存代理設定",
+        "button": "儲存智能体設定",
         "success": "✓ 執行器設定儲存成功！"
       },
       "availability": {
         "checking": "檢查中...",
         "loginDetected": "偵測到最近使用",
-        "loginDetectedTooltip": "找到此代理的最近驗證憑證",
+        "loginDetectedTooltip": "找到此智能体的最近驗證憑證",
         "installationFound": "偵測到曾使用",
-        "installationFoundTooltip": "找到代理設定。您可能需要登入才能使用。",
+        "installationFoundTooltip": "找到智能体設定。您可能需要登入才能使用。",
         "notFound": "未知",
-        "notFoundTooltip": "我們無法驗證此代理是否已設定，但請繼續嘗試。"
+        "notFoundTooltip": "我們無法驗證此智能体是否已設定，但請繼續嘗試。"
       },
       "editor": {
         "formLabel": "編輯 JSON",
-        "agentLabel": "代理",
+        "agentLabel": "智能体",
         "agentPlaceholder": "選擇執行器類型",
         "configLabel": "設定",
         "configPlaceholder": "選擇設定",
@@ -269,26 +269,26 @@
         "deleteTitle": "無法刪除最後一個設定",
         "deleteButton": "刪除 {{name}}",
         "deleteText": "刪除",
-        "jsonLabel": "代理設定（JSON）",
+        "jsonLabel": "智能体設定（JSON）",
         "jsonPlaceholder": "載入設定檔中...",
         "jsonLoading": "載入中...",
         "pathLabel": "設定檔位置："
       },
       "errors": {
         "deleteFailed": "刪除設定失敗。請重試。",
-        "saveFailed": "儲存代理設定失敗。請重試。",
+        "saveFailed": "儲存智能体設定失敗。請重試。",
         "saveConfigFailed": "儲存設定失敗。請重試。"
       }
     },
     "mcp": {
       "title": "MCP 伺服器設定",
-      "description": "設定模型上下文協議伺服器，使用自訂工具與資源擴充編碼代理功能。",
+      "description": "設定模型上下文協議伺服器，使用自訂工具與資源擴充編碼智能体功能。",
       "loading": "載入 MCP 設定中...",
       "applying": "套用設定中...",
       "labels": {
-        "agent": "代理",
+        "agent": "智能体",
         "agentPlaceholder": "選擇執行器",
-        "agentHelper": "選擇要設定 MCP 伺服器的代理。",
+        "agentHelper": "選擇要設定 MCP 伺服器的智能体。",
         "serverConfig": "伺服器設定（JSON）",
         "popularServers": "熱門伺服器",
         "serverHelper": "點擊卡片將該 MCP 伺服器插入到上方 JSON 中。",
@@ -378,13 +378,13 @@
         "description": "設定此儲存庫的設定腳本、清理腳本與要複製的檔案。這些腳本在儲存庫用於任何工作區時執行。",
         "setup": {
           "label": "設定腳本",
-          "helper": "此腳本在工作樹內執行，於建立後、編碼代理啟動前執行。用於安裝相依套件或準備環境等設定工作。",
-          "parallelLabel": "與編碼代理平行執行設定腳本",
-          "parallelHelper": "啟用後，設定腳本將與編碼代理同時執行，而不是等待設定完成後再啟動。"
+          "helper": "此腳本在工作樹內執行，於建立後、編碼智能体啟動前執行。用於安裝相依套件或準備環境等設定工作。",
+          "parallelLabel": "與編碼智能体平行執行設定腳本",
+          "parallelHelper": "啟用後，設定腳本將與編碼智能体同時執行，而不是等待設定完成後再啟動。"
         },
         "cleanup": {
           "label": "清理腳本",
-          "helper": "此腳本在工作樹內執行，於編碼代理執行後（僅在有變更時）執行。用於品質保證工作，如執行 linter、格式化工具、測試或其他驗證步驟。"
+          "helper": "此腳本在工作樹內執行，於編碼智能体執行後（僅在有變更時）執行。用於品質保證工作，如執行 linter、格式化工具、測試或其他驗證步驟。"
         },
         "copyFiles": {
           "label": "複製檔案",

@@ -9,8 +9,8 @@
         "projectsDesc": "项目仓库和配置",
         "repos": "仓库",
         "reposDesc": "仓库脚本和配置",
-        "agents": "代理",
-        "agentsDesc": "编码代理配置",
+        "agents": "智能体",
+        "agentsDesc": "编码智能体配置",
         "mcp": "MCP 服务器",
         "mcpDesc": "模型上下文协议服务器",
         "organizations": "组织设置",
@@ -42,12 +42,12 @@
         }
       },
       "taskExecution": {
-        "title": "默认编码代理",
-        "description": "选择任务的默认编码代理。",
+        "title": "默认编码智能体",
+        "description": "选择任务的默认编码智能体。",
         "executor": {
-          "label": "默认代理配置",
+          "label": "默认智能体配置",
           "placeholder": "选择配置文件",
-          "helper": "选择创建任务尝试时使用的默认代理配置。"
+          "helper": "选择创建任务尝试时使用的默认智能体配置。"
         },
         "variant": "默认",
         "defaultLabel": "默认"
@@ -142,11 +142,11 @@
         "description": "配置PR创建行为",
         "autoDescription": {
           "label": "默认自动生成PR描述",
-          "helper": "启用后，AI代理将在创建PR后自动更新标题和描述。"
+          "helper": "启用后，AI智能体将在创建PR后自动更新标题和描述。"
         },
         "customPrompt": {
           "useCustom": "使用自定义提示",
-          "helper": "生成PR描述时AI代理使用的自定义提示。使用{pr_number}和{pr_url}作为占位符。"
+          "helper": "生成PR描述时AI智能体使用的自定义提示。使用{pr_number}和{pr_url}作为占位符。"
         }
       },
       "notifications": {
@@ -243,25 +243,25 @@
       }
     },
     "agents": {
-      "title": "编码代理配置",
-      "description": "使用不同的配置自定义编码代理的行为。",
-      "loading": "加载代理配置中...",
+      "title": "编码智能体配置",
+      "description": "使用不同的配置自定义编码智能体的行为。",
+      "loading": "加载智能体配置中...",
       "save": {
-        "button": "保存代理配置",
+        "button": "保存智能体配置",
         "success": "✓ 执行器配置保存成功！"
       },
       "availability": {
         "checking": "检查中...",
         "loginDetected": "检测到最近使用",
-        "loginDetectedTooltip": "找到此代理的最近身份验证凭据",
+        "loginDetectedTooltip": "找到此智能体的最近身份验证凭据",
         "installationFound": "检测到以前使用",
-        "installationFoundTooltip": "找到代理配置。您可能需要登录才能使用它。",
+        "installationFoundTooltip": "找到智能体配置。您可能需要登录才能使用它。",
         "notFound": "未知",
-        "notFoundTooltip": "我们无法验证此代理是否已设置，但请继续尝试。"
+        "notFoundTooltip": "我们无法验证此智能体是否已设置，但请继续尝试。"
       },
       "editor": {
         "formLabel": "编辑 JSON",
-        "agentLabel": "代理",
+        "agentLabel": "智能体",
         "agentPlaceholder": "选择执行器类型",
         "configLabel": "配置",
         "configPlaceholder": "选择配置",
@@ -269,26 +269,26 @@
         "deleteTitle": "无法删除最后一个配置",
         "deleteButton": "删除 {{name}}",
         "deleteText": "删除",
-        "jsonLabel": "代理配置（JSON）",
+        "jsonLabel": "智能体配置（JSON）",
         "jsonPlaceholder": "加载配置文件中...",
         "jsonLoading": "加载中...",
         "pathLabel": "配置文件位置："
       },
       "errors": {
         "deleteFailed": "删除配置失败。请重试。",
-        "saveFailed": "保存代理配置失败。请重试。",
+        "saveFailed": "保存智能体配置失败。请重试。",
         "saveConfigFailed": "保存配置失败。请重试。"
       }
     },
     "mcp": {
       "title": "MCP 服务器配置",
-      "description": "配置模型上下文协议服务器，使用自定义工具和资源扩展编码代理功能。",
+      "description": "配置模型上下文协议服务器，使用自定义工具和资源扩展编码智能体功能。",
       "loading": "加载 MCP 配置中...",
       "applying": "应用配置中...",
       "labels": {
-        "agent": "代理",
+        "agent": "智能体",
         "agentPlaceholder": "选择执行器",
-        "agentHelper": "选择要为其配置 MCP 服务器的代理。",
+        "agentHelper": "选择要为其配置 MCP 服务器的智能体。",
         "serverConfig": "服务器配置（JSON）",
         "popularServers": "热门服务器",
         "serverHelper": "点击卡片将该 MCP 服务器插入到上面的 JSON 中。",
@@ -378,13 +378,13 @@
         "description": "配置此仓库的设置脚本、清理脚本和要复制的文件。这些脚本在仓库用于任何工作区时都会运行。",
         "setup": {
           "label": "设置脚本",
-          "helper": "此脚本从工作树内部运行，在创建后、编码代理启动前执行。用于设置任务，如安装依赖项或准备环境。",
-          "parallelLabel": "与编码代理并行运行设置脚本",
-          "parallelHelper": "启用后，设置脚本将与编码代理同时运行，而不是等待设置完成后再启动。"
+          "helper": "此脚本从工作树内部运行，在创建后、编码智能体启动前执行。用于设置任务，如安装依赖项或准备环境。",
+          "parallelLabel": "与编码智能体并行运行设置脚本",
+          "parallelHelper": "启用后，设置脚本将与编码智能体同时运行，而不是等待设置完成后再启动。"
         },
         "cleanup": {
           "label": "清理脚本",
-          "helper": "此脚本从工作树内部运行，在编码代理执行后执行（仅在进行了更改时）。用于质量保证任务，如运行 linter、格式化程序、测试或其他验证步骤。"
+          "helper": "此脚本从工作树内部运行，在编码智能体执行后执行（仅在进行了更改时）。用于质量保证任务，如运行 linter、格式化程序、测试或其他验证步骤。"
         },
         "copyFiles": {
           "label": "复制文件",
